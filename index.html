@@ -1,18 +1,14 @@
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Brandon Leon Javascript, React, Node Developer</title>
-
 		<link
 			rel="stylesheet"
 			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="css/styles.css" />
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="node_modules/fontawesome-free/css/all.css"
-		/>
+		/> -->
 
 		<link rel="icon" href="favicon.png" />
 		<link
@@ -24,6 +20,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +34,7 @@
 				><img id="logo" src="img/BlLogo.png" alt="" />BRANDON LEON</a
 			>
 			<button
-				class="navbar-toggler"
+				class="navbar-toggler mr-5"
 				type="button"
 				data-toggle="collapse"
 				data-target="#navbarSupportedContent"
@@ -77,13 +74,13 @@
 					<h3 class="shadow">Full-Stack Developer</h3>
 				</div>
 			</div>
-			<div
+			<!-- <div
 				class="row mt-4 mx-auto"
-				style="max-width: 120px;"
+				style="max-width: 120px"
 				id="hoverAnim"
 			>
 				<div
-					style="max-width: 110px; flex: 1;"
+					style="max-width: 110px; flex: 1"
 					id="blueOutline2"
 					class="col mx-auto mt-5"
 				>
@@ -96,25 +93,8 @@
 						><i class="material-icons">expand_more</i></a
 					>
 				</div>
-			</div>
+			</div> -->
 		</header>
-
-		<section id="testing">
-			<div class="container">
-				<div
-					data-aos="fade-up"
-					data-aos-duration="800"
-					class="aos-init"
-				>
-					<div class="row">
-						<div class="col-12">
-							<!-- <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" -->
-							<!-- alt=""> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section id="projects">
 			<div class="container">
@@ -125,8 +105,158 @@
 				>
 					<div class="row">
 						<div class="col-12">
-							<!-- <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" -->
-							<!-- alt=""> -->
+							<div
+								id="projectBtnContainer"
+								class="mt-5 mb-2 pt-5"
+							>
+								<button
+									id="btnAll"
+									class="btn active"
+									data-filter="all"
+									data-mixitup-control
+								>
+									Show all
+								</button>
+								<button
+									id="btnbootstrap"
+									class="btn"
+									data-filter=".bootstrap"
+									data-mixitup-control
+								>
+									Bootstrap
+								</button>
+								<button
+									id="btnJS"
+									class="btn"
+									data-filter=".js"
+									data-mixitup-control
+								>
+									Javascript
+								</button>
+								<button
+									id="btnreact"
+									class="btn"
+									data-filter=".react"
+									data-mixitup-control
+								>
+									React
+								</button>
+							</div>
+
+							<!-- Portfolio Gallery Grid -->
+							<div id="gallery" class="row">
+								<div
+									class="column bootstrap mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://github.com/bsleon/NucampBootstrap"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/Nucamp.jpg"
+												alt="Nucamp"
+												style="width: 100%"
+										/></a>
+										<h4>Nucamp</h4>
+										<p>
+											Class project during Nucamp bootcamp
+										</p>
+									</div>
+								</div>
+								<div
+									class="column js mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://codepen.io/bsleon/pen/vYLyRvE"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/FractalTree.jpg"
+												alt="Fractal Tree"
+												style="width: 100%"
+										/></a>
+										<h4>Fractal Tree Generator</h4>
+										<p>Generate a custom fractal tree.</p>
+									</div>
+								</div>
+								<div
+									class="column js mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://codepen.io/bsleon/pen/YzwWbvg"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/MoviePosterCarouselSearcher.jpg"
+												alt="Movie Poster Carousel"
+												style="width: 100%"
+										/></a>
+										<h4>Movie Poster Carousel</h4>
+										<p>
+											Search movies and display their
+											posters in a carousel.
+										</p>
+									</div>
+								</div>
+								<div
+									class="column js mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://codepen.io/bsleon/pen/dyGOYRE"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/PokemonCards.jpg"
+												alt="Pokemon Cards"
+												style="width: 100%"
+										/></a>
+										<h4>Pokemon Card Generator</h4>
+										<p>Generate clickable pokemon cards.</p>
+									</div>
+								</div>
+								<div
+									class="column bootstrap js react mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://bsleon.github.io/ReactChessPortfolioProject"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/Chessfen.jpg"
+												alt="Chessfen"
+												style="width: 100%"
+										/></a>
+										<h4>React Chess Project</h4>
+										<p>
+											Load different chess positions and
+											coach others.
+										</p>
+									</div>
+								</div>
+								<div
+									class="column js mix col-12 col-md-6 col-lg-4"
+								>
+									<div class="content">
+										<a
+											href="https://codepen.io/bsleon/pen/Bajzeye"
+											target="_blank"
+										>
+											<img
+												src="/img/projects/RecipeGenerator.jpg"
+												alt="Recipe Generator"
+												style="width: 100%"
+										/></a>
+										<h4>Recipe Generator</h4>
+										<p>Generate a random recipe to try.</p>
+									</div>
+								</div>
+							</div>
+							<!-- END GRID -->
 						</div>
 					</div>
 				</div>
@@ -136,7 +266,7 @@
 		<section id="skills" class="pb-3">
 			<div class="container">
 				<div class="row">
-					<div class="mt-4 mb-3 pt-5 col col-12 text-center">
+					<div class="mt-5 mb-3 pt-5 col col-12 text-center">
 						<div
 							data-aos="fade-up"
 							data-aos-duration="800"
@@ -152,19 +282,19 @@
 						class="row mt-5 text-center mr-2 ml-2"
 					>
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/htmlWhite.png"
+									src="/img/logos/htmlWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/htmlColor.png"
+									src="/img/logos/htmlColor.png"
 									alt=""
 								/>
 							</div>
@@ -172,19 +302,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/cssWhite.png"
+									src="/img/logos/cssWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/cssColor.png"
+									src="/img/logos/cssColor.png"
 									alt=""
 								/>
 							</div>
@@ -192,19 +322,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/javascriptWhite.png"
+									src="/img/logos/javascriptWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/javascriptColor.png"
+									src="/img/logos/javascriptColor.png"
 									alt=""
 								/>
 							</div>
@@ -212,19 +342,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/bootstrapWhite.png"
+									src="/img/logos/bootstrapWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/bootstrapColor.png"
+									src="/img/logos/bootstrapColor.png"
 									alt=""
 								/>
 							</div>
@@ -232,19 +362,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/reactWhite.png"
+									src="/img/logos/reactWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/reactColor.png"
+									src="/img/logos/reactColor.png"
 									alt=""
 								/>
 							</div>
@@ -252,19 +382,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/reduxWhite.png"
+									src="/img/logos/reduxWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/reduxColor.png"
+									src="/img/logos/reduxColor.png"
 									alt=""
 								/>
 							</div>
@@ -272,19 +402,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/reactNativeWhite.png"
+									src="/img/logos/reactNativeWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/reactNativeColor.png"
+									src="/img/logos/reactNativeColor.png"
 									alt=""
 								/>
 							</div>
@@ -292,19 +422,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/angularWhite.png"
+									src="/img/logos/angularWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/angularColor.png"
+									src="/img/logos/angularColor.png"
 									alt=""
 								/>
 							</div>
@@ -312,19 +442,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/sassWhite.png"
+									src="/img/logos/sassWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/sassColor.png"
+									src="/img/logos/sassColor.png"
 									alt=""
 								/>
 							</div>
@@ -332,19 +462,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/gitWhite.png"
+									src="/img/logos/gitWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/gitColor.png"
+									src="/img/logos/gitColor.png"
 									alt=""
 								/>
 							</div>
@@ -352,19 +482,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/githubWhite.png"
+									src="/img/logos/githubWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/githubColor.png"
+									src="/img/logos/githubColor.png"
 									alt=""
 								/>
 							</div>
@@ -372,19 +502,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/nodeJsWhite.png"
+									src="/img/logos/nodeJsWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/nodeJsColor.png"
+									src="/img/logos/nodeJsColor.png"
 									alt=""
 								/>
 							</div>
@@ -392,19 +522,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/expoWhite.png"
+									src="/img/logos/expoWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/expoColor.png"
+									src="/img/logos/expoColor.png"
 									alt=""
 								/>
 							</div>
@@ -412,19 +542,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/mongoDbWhite.png"
+									src="/img/logos/mongoDbWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/mongoDbColor.png"
+									src="/img/logos/mongoDbColor.png"
 									alt=""
 								/>
 							</div>
@@ -432,19 +562,19 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/npmWhite.png"
+									src="/img/logos/npmWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/npmColor.png"
+									src="/img/logos/npmColor.png"
 									alt=""
 								/>
 							</div>
@@ -452,23 +582,103 @@
 						</div>
 
 						<div
-							class="col-md-3 col-4 aos-init"
-							data-aos="fade-up"
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
 							data-aos-duration="600"
 						>
 							<div class="imgCircle mx-auto">
 								<img
 									class="logo image_on"
-									src="/img/logos/Finished/photoshopWhite.png"
+									src="/img/logos/photoshopWhite.png"
 									alt=""
 								/>
 								<img
 									class="logo image_off"
-									src="/img/logos/Finished/photoshopColor.png"
+									src="/img/logos/photoshopColor.png"
 									alt=""
 								/>
 							</div>
 							<p class="pt-1">Photoshop</p>
+						</div>
+
+						<div
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
+							data-aos-duration="600"
+						>
+							<div class="imgCircle mx-auto">
+								<img
+									class="logo image_on"
+									src="/img/logos/cSharpWhite.png"
+									alt=""
+								/>
+								<img
+									class="logo image_off"
+									src="/img/logos/cSharpColor.png"
+									alt=""
+								/>
+							</div>
+							<p class="pt-1">C#</p>
+						</div>
+
+						<div
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
+							data-aos-duration="600"
+						>
+							<div class="imgCircle mx-auto">
+								<img
+									class="logo image_on"
+									src="/img/logos/wordpressWhite.png"
+									alt=""
+								/>
+								<img
+									class="logo image_off"
+									src="/img/logos/wordpressColor.png"
+									alt=""
+								/>
+							</div>
+							<p class="pt-1">WordPress</p>
+						</div>
+
+						<div
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
+							data-aos-duration="600"
+						>
+							<div class="imgCircle mx-auto">
+								<img
+									class="logo image_on"
+									src="/img/logos/vsCodeWhite.png"
+									alt=""
+								/>
+								<img
+									class="logo image_off"
+									src="/img/logos/vsCodeColor.png"
+									alt=""
+								/>
+							</div>
+							<p class="pt-1">VS Code</p>
+						</div>
+
+						<div
+							class="col-md-3 col-6 aos-init"
+							data-aos="zoom-in"
+							data-aos-duration="600"
+						>
+							<div class="imgCircle mx-auto">
+								<img
+									class="logo image_on"
+									src="/img/logos/unityWhite.png"
+									alt=""
+								/>
+								<img
+									class="logo image_off"
+									src="/img/logos/unityColor.png"
+									alt=""
+								/>
+							</div>
+							<p class="pt-1">Unity</p>
 						</div>
 					</div>
 				</div>
@@ -478,20 +688,29 @@
 		<section id="contact">
 			<div class="container">
 				<div class="row">
-					<div id="con-left" class="col-6"></div>
+					<div
+						id="con-left"
+						class="col-6"
+						data-aos="fade-right"
+						data-aos-duration="600"
+					></div>
 					<div id="con-right" class="col col-sm-9 col-md-6 mx-auto">
 						<div class="container form-cont mt-5 p-3">
 							<div class="row">
 								<div
 									class="col-12 mt-2 text-center aos-init aos-animate"
-									data-aos="fade-up"
+									data-aos="fade-down"
 									data-aos-duration="600"
 								>
 									<h2>Let's Connect!</h2>
 								</div>
 								<div class="col-12 mt-3">
 									<form id="form">
-										<div class="form-group">
+										<div
+											class="form-group"
+											data-aos="fade-right"
+											data-aos-duration="600"
+										>
 											<label for="name">Name:</label>
 											<input
 												type="name"
@@ -500,7 +719,11 @@
 												placeholder="First Last"
 											/>
 										</div>
-										<div class="form-group">
+										<div
+											class="form-group"
+											data-aos="fade-left"
+											data-aos-duration="600"
+										>
 											<label for="email">Email:</label>
 											<input
 												type="email"
@@ -510,7 +733,11 @@
 												placeholder="name@example.com"
 											/>
 										</div>
-										<div class="form-group">
+										<div
+											class="form-group"
+											data-aos="fade-right"
+											data-aos-duration="600"
+										>
 											<label for="message"
 												>Message:</label
 											>
@@ -522,7 +749,12 @@
 												placeholder="What's on your mind?"
 											></textarea>
 										</div>
-										<div class="form-group pt-2" id="send">
+										<div
+											class="form-group pt-2"
+											data-aos="fade-up"
+											data-aos-duration="600"
+											id="send"
+										>
 											<button type="submit" class="btn">
 												Send
 											</button>
@@ -548,7 +780,7 @@
 								<div class="row">
 									<div class="col-2" id="linked-in">
 										<a
-											href="https://www.linkedin.com/in/caseyaaroncook/"
+											href="https://www.linkedin.com/"
 											target="_blank"
 											id="lin"
 										>
@@ -561,7 +793,7 @@
 									</div>
 									<div class="col-2 pt-1 ml-2">
 										<a
-											href="https://twitter.com/caseyaaroncook"
+											href="https://twitter.com/"
 											target="_blank"
 										>
 											<img
@@ -572,7 +804,7 @@
 									</div>
 									<div class="col-2 ml-3">
 										<a
-											href="https://github.com/casey-cook"
+											href="https://github.com/bsleon"
 											target="_blank"
 										>
 											<img
@@ -582,7 +814,7 @@
 										</a>
 									</div>
 									<div class="col-2 pt-1 ml-3">
-										<a href="mailto: cook.caseya@gmail.com">
+										<a href="mailto: bsleon@umich.edu">
 											<img
 												src="./img/contact/mail.png"
 												alt="email"
@@ -597,7 +829,7 @@
 						<ul>
 							<li>Brandon Leon</li>
 							<li class="foot-li">
-								<a class="footer-link" href="tel:248462-2899"
+								<a class="footer-link" href="tel:248-462-2899"
 									>+1 (248) 462-2899</a
 								>
 							</li>
@@ -614,10 +846,17 @@
 			</div>
 		</footer>
 
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<script>
 			AOS.init();
 		</script>
+
+		<!-- <script src="scripts/imageGallery.js"></script> -->
+		<script src="node_modules/mixitup/dist/mixitup.min.js"></script>
+
+		<script src="scripts/scripts.js"></script>
+		
 	</body>
 </html>
