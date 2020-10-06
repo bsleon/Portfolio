@@ -30,3 +30,7 @@ var mixer = mixitup(gallery, {
 		// perspectiveDistance: "2000px",
 	},
 });
+
+function goToHomePage() {
+    window.location = '/';
+}
