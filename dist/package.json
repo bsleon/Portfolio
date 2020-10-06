@@ -1,0 +1,38 @@
+{
+	"name": "myportfolio",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"lite": "lite-server",
+		"scss": "node-sass -o css/ css/",
+		"start": "npm run watch:all",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+		"watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+		"imagemin": "imagemin img/* -o dist/img && imagemin img/contact/* -o dist/img/contact && imagemin img/logos/* -o dist/img/logos && imagemin img/projects/* -o dist/img/projects && imagemin ./* -o dist/",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"copyfiles": "^2.2.0",
+		"imagemin-cli": "^5.1.0",
+		"lite-server": "^2.3.0",
+		"mixitup": "^3.3.1",
+		"node-sass": "^4.14.1",
+		"onchange": "^7.0.0",
+		"parallelshell": "3.0.1",
+		"rimraf": "^3.0.2",
+		"usemin-cli": "^0.6.0"
+	},
+	"dependencies": {
+		"aos": "^2.3.4",
+		"bootstrap": "^4.0.0",
+		"jquery": "^3.3.1",
+		"popper.js": "^1.12.9"
+	}
+}
