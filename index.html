@@ -29,7 +29,7 @@
 	<body>
 		<!-- START NAVBAR -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand ml-5" href="/"
+			<a class="navbar-brand ml-5" href="#home"
 				><img id="logo" src="./img/BlLogo.png" alt="" />BRANDON LEON</a
 			>
 			<button
@@ -62,38 +62,38 @@
 			</div>
 		</nav>
 		<!-- END NAVBAR -->
-
-		<header class="splash">
-			<div class="container">
-				<div class="row">
-					<div class="col mt-5">
-						<h1 class="shadow">Brandon Leon</h1>
+		<section id="home">
+			<header class="splash">
+				<div class="container">
+					<div class="row">
+						<div class="col mt-5">
+							<h1 class="shadow">Brandon Leon</h1>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h3 class="shadow">Full-Stack Developer</h3>
+				<div class="row">
+					<div class="col">
+						<h3 class="shadow">Full-Stack Developer</h3>
+					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</section>
 
 		<section id="aboutMe">
 			<div class="container">
 				<div class="row">
 					<div class="col-8 ml-auto mr-auto mt-5 mb-5">
 						<header class="text-center mt-5">
-							<h1>About Me</h1>
-							<h3>Fullstack Developer</h3>
-							
-								<img
-									src="img/Brandon_bw_bg.jpg"
-									class="avatar"
-									alt="Brandon"
-									onmouseover="onHover();"
-									onmouseout="offHover();"
-								/>
-							
+							<h2>About Me</h2>
+							<h4>Fullstack Developer</h4>
+
+							<img
+								src="img/Brandon_bw_bg.jpg"
+								class="avatar"
+								alt="Brandon"
+								onmouseover="onHover();"
+								onmouseout="offHover();"
+							/>
 						</header>
 
 						<p>
@@ -125,6 +125,7 @@
 								id="projectBtnContainer"
 								class="mt-5 mb-5 pt-5 ml container text-center"
 							>
+								<h2 class="mb-5">Portfolio</h2>
 								<div class="row">
 									<span class="col-3">
 										<button
@@ -771,8 +772,8 @@
 		</section>
 
 		<section id="contact">
-			<div class="container">
-				<div class="row">
+			<div class="container pb-5">
+				<div class="row pb-5">
 					<div
 						id="con-left"
 						class="col-lg-7"
@@ -946,14 +947,14 @@
 		<script>
 			AOS.init();
 
-				//change avatar on hover
-	function onHover() {
-		$(".avatar").attr("src", "img/Brandon.jpg");
-	}
+			//change avatar on hover
+			function onHover() {
+				$(".avatar").attr("src", "img/Brandon.jpg");
+			}
 
-	function offHover() {
-		$(".avatar").attr("src", "img/Brandon_bw_bg.jpg");
-	}
+			function offHover() {
+				$(".avatar").attr("src", "img/Brandon_bw_bg.jpg");
+			}
 		</script>
 	</body>
 </html>
