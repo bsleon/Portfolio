@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: rgba(233, 214, 173, 0.795); }
+  background-color: rgba(63, 63, 63, 0.795); }
 
 .shadow {
   text-shadow: 2px 3px 2px black; }
@@ -103,6 +103,14 @@ h3 {
   align-items: center;
   text-align: center;
   justify-content: center; }
+
+#aboutMe {
+  background-image: url("../img/hex.png");
+  background-size: 3%;
+  background-attachment: fixed; }
+
+.avatar {
+  border-radius: 50%; }
 
 #projects {
   background-color: #14202f;
