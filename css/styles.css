@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   background-color: rgba(233, 214, 173, 0.795); }
 
@@ -26,7 +26,7 @@ h3 {
 
 .navbar {
   background-color: #231f20 !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* font-size: 1.5em; */ }
 
 .nav-item {
@@ -35,19 +35,25 @@ h3 {
 #navMain a:hover {
   opacity: 70%;
   color: #61caff !important;
-  transition-duration: .3s; }
+  transition-duration: 0.3s; }
 
 #navLogo a:hover {
   opacity: 70%;
-  transition-duration: .3s; }
+  transition-duration: 0.3s; }
 
 #skills {
-  /* text-shadow: 1px 1px 1px black;  */
+  background-color: #4c5364;
+  background-image: url("../img/circuit.png");
+  background-attachment: fixed;
+  background-size: 15%;
+  text-shadow: 1px 1px 1px black;
+  color: white !important;
   color: black;
   font-weight: bold; }
 
 #skills h2 {
-  color: #231f20; }
+  color: white;
+  text-shadow: 2px 2px 1px black; }
 
 .icon-background {
   color: #3a3436;
@@ -61,24 +67,30 @@ h3 {
   /* display: inline-block;
     vertical-align: middle; */ }
 
-.image_off, .imgCircle:hover .image_on {
+.image_off,
+.imgCircle:hover .image_on {
   display: none; }
 
-.image_on, .imgCircle:hover .image_off {
+.image_on,
+.imgCircle:hover .image_off {
   display: block; }
 
 .imgCircle {
-  background: #383838;
+  background: #222222;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   width: 90px;
-  height: 90px; }
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centering y-axis */
+  align-items: center;
+  /* Centering x-axis */ }
 
 .logo {
-  width: 50px;
-  margin-left: 22.5%;
-  padding-top: 22.5%; }
+  width: 50px; }
 
 .splash {
   width: 100%;
@@ -92,10 +104,21 @@ h3 {
   justify-content: center; }
 
 #projects {
-  background-color: black; }
+  background-color: #14202f;
+  background-image: url("../img/computer-chip-pattern.png");
+  background-attachment: fixed;
+  background-size: 25%; }
 
 #contact {
-  background-color: #4a5958; }
+  background-color: #ddd;
+  background-image: url("../img/paper.png"); }
+
+#contact h2 {
+  color: #474747;
+  font-weight: 1000; }
+
+#contact label {
+  color: black; }
 
 #con-left {
   background-image: url("../img/contact/contact.png");
