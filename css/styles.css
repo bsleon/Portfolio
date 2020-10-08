@@ -26,6 +26,7 @@ h3 {
 
 .navbar {
   background-color: #231f20 !important;
+  background-image: url("../img/texture.png");
   font-family: "Montserrat", sans-serif;
   /* font-size: 1.5em; */ }
 
@@ -121,7 +122,7 @@ h3 {
   color: black; }
 
 #con-left {
-  background-image: url("../img/contact/contact.png");
+  background-image: url("../img/contact/connect.png");
   background-position: center;
   background-size: cover; }
 
@@ -147,7 +148,8 @@ h3 {
 
 footer {
   /* height: 100%; */
-  background-color: #4c5451; }
+  background-color: #4c5451;
+  background-image: url("../img/texture.png"); }
 
 footer img {
   width: 38px; }
