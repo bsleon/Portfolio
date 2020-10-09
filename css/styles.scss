@@ -1,12 +1,16 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: "Montserrat", sans-serif;
 	color: white;
 	// background-color: rgba(233, 214, 173, 0.795);
-	background-color: rgba(63, 63, 63, 0.795);
+	// background-color: rgba(63, 63, 63, 0.795);
+		background-image: url("../img/hex.png");
+	background-size: 5%;
+	background-attachment: fixed;
+	background-color: #535872;
 }
 
 .shadow {
@@ -42,9 +46,11 @@ h3 {
 	/* font-size: 1.5em; */
 }
 
-// .navbar-brand {
-//     margin-left: 20px !important;
-// }
+.navbar-brand {
+	// margin-left: 20px !important;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.5em; 
+}
 
 .nav-item {
 	text-align: right;
@@ -65,7 +71,7 @@ h3 {
 	background-color: #4c5364;
 	background-image: url("../img/circuit.png");
 	background-attachment: fixed;
-	background-size: 15%;
+	background-size: 20%;
 	text-shadow: 1px 1px 1px black;
 	color: white !important;
 	color: black;
@@ -133,13 +139,17 @@ h3 {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	// clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 130px), 0% 100%);
 }
 
-#aboutMe {
-	background-image: url("../img/hex.png");
-	background-size: 3%;
-	background-attachment: fixed;
-}
+// #aboutMe {
+// 	// background-image: url("../img/hex.png");
+// 	// background-size: 3%;
+// 	// background-attachment: fixed;
+// 	// background-color: #535872;
+
+
+// }
 
 .avatar {
 	border-radius: 50%;
@@ -151,7 +161,15 @@ h3 {
 	background-image: url("../img/computer-chip-pattern.png");
 	background-attachment: fixed;
 	background-size: 25%;
+	// clip-path: polygon(0% 0%, 100% 170px, 100% 100%, 0% 100%);
+
 }
+
+// #projects .container {
+// 	// transform: skewY(5deg);
+// 	position: relative;
+// 	z-index: 1;
+// }
 
 #contact {
 	background-color: #ddd;

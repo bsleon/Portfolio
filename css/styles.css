@@ -4,7 +4,10 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-color: rgba(63, 63, 63, 0.795); }
+  background-image: url("../img/hex.png");
+  background-size: 5%;
+  background-attachment: fixed;
+  background-color: #535872; }
 
 .shadow {
   text-shadow: 2px 3px 2px black; }
@@ -33,6 +36,10 @@ h3 {
   font-family: "Montserrat", sans-serif;
   /* font-size: 1.5em; */ }
 
+.navbar-brand {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em; }
+
 .nav-item {
   text-align: right; }
 
@@ -49,7 +56,7 @@ h3 {
   background-color: #4c5364;
   background-image: url("../img/circuit.png");
   background-attachment: fixed;
-  background-size: 15%;
+  background-size: 20%;
   text-shadow: 1px 1px 1px black;
   color: white !important;
   color: black;
@@ -106,11 +113,6 @@ h3 {
   align-items: center;
   text-align: center;
   justify-content: center; }
-
-#aboutMe {
-  background-image: url("../img/hex.png");
-  background-size: 3%;
-  background-attachment: fixed; }
 
 .avatar {
   border-radius: 50%; }
