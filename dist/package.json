@@ -11,9 +11,9 @@
 		"watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
 		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
 		"imagemin": "imagemin img/* -o dist/img && imagemin img/contact/* -o dist/img/contact && imagemin img/logos/* -o dist/img/logos && imagemin img/projects/* -o dist/img/projects && imagemin ./* -o dist/",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
-    "clean": "rimraf dist",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+		"usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+		"clean": "rimraf dist",
+		"build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
 	},
 	"author": "",
 	"license": "ISC",
@@ -32,6 +32,7 @@
 	"dependencies": {
 		"aos": "^2.3.4",
 		"bootstrap": "^4.0.0",
+		"chart.js": "^2.9.3",
 		"jquery": "^3.3.1",
 		"popper.js": "^1.12.9"
 	}

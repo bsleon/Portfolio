@@ -7,7 +7,7 @@ body {
 	color: white;
 	// background-color: rgba(233, 214, 173, 0.795);
 	// background-color: rgba(63, 63, 63, 0.795);
-		background-image: url("../img/hex.png");
+	background-image: url("../img/hex.png");
 	background-size: 5%;
 	background-attachment: fixed;
 	background-color: #535872;
@@ -48,8 +48,8 @@ h3 {
 
 .navbar-brand {
 	// margin-left: 20px !important;
-	font-family: 'EB Garamond', serif;
-	font-size: 1.5em; 
+	font-family: "EB Garamond", serif;
+	font-size: 1.5em;
 }
 
 .nav-item {
@@ -148,27 +148,41 @@ h3 {
 // 	// background-attachment: fixed;
 // 	// background-color: #535872;
 
-
 // }
+
 
 .avatar {
 	border-radius: 50%;
 }
 
+#testimonials {
+	background-color: rgb(19, 19, 19);
+	background-image: url("../img/texture.png");
+
+}
+
 #projects {
+
 	// background-color: black;
 	background-color: #14202f;
 	background-image: url("../img/computer-chip-pattern.png");
 	background-attachment: fixed;
 	background-size: 25%;
 	// clip-path: polygon(0% 0%, 100% 170px, 100% 100%, 0% 100%);
+}
 
+#projects img {
+	border-radius: 5%;
 }
 
 // #projects .container {
-// 	// transform: skewY(5deg);
-// 	position: relative;
-// 	z-index: 1;
+// // 	// transform: skewY(5deg);
+// // 	position: relative;
+// // 	z-index: 1;
+// 	border-top: 100px solid transparent;
+// 	padding: 15px;
+// 	mask-border: url("../img/cat.png") space alpha;
+// 	// mask-image: url("../img/cat.png");
 // }
 
 #contact {
@@ -191,9 +205,10 @@ h3 {
 	background-image: url("../img/contact/connect.png");
 	background-position: center;
 	background-size: cover;
+	opacity: 0.7;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 766px) {
 	#con-left {
 		display: none;
 	}
@@ -315,6 +330,7 @@ footer ul {
 	background-color: #666;
 	color: white;
 }
+//end photo gallery
 
 /* .skillsnologies i {
     font-size: 3em;

@@ -34,7 +34,7 @@ $(function () {
 
 	// Add smooth scrolling to all links
 	$("a").on("click", function (event) {
-		if (this.hash !== "") {
+		if (this.hash !== "" && this.hash !== "#testimonialCarousel") {
 			event.preventDefault();
 			var hash = this.hash;
 			$("html, body").animate(
@@ -48,6 +48,7 @@ $(function () {
 			);
 		}
 	});
+
 
 
 });
