@@ -183,7 +183,7 @@ h3 {
 #skillsContainer {
   background-image: url("../img/texture.png");
   background-color: rgba(0, 0, 0, 0.5);
-  border: 10px solid rgba(255, 255, 255, 0.2); }
+  border: 10px solid rgba(0, 0, 0, 0.5); }
 
 #contact {
   background-color: #ddd;
@@ -290,7 +290,7 @@ footer ul {
 
 /* Add a grey background color on mouse-over */
 .btn:hover {
-  background-color: #ddd !important; }
+  background-color: #252525 !important; }
 
 /* Add a dark background color to the active button */
 /* .skillsnologies i {
