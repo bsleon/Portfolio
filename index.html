@@ -23,7 +23,6 @@
 			href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +33,7 @@
 		<!-- START NAVBAR -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 			<a class="navbar-brand ml-5" href="#home"
-				><img id="logo" src="./img/BlLogo.png" alt="" />BRANDON LEON</a
+				><img id="logo" src="./favicon.png" alt="logo" />BRANDON LEON</a
 			>
 			<button
 				class="navbar-toggler mr-5"
@@ -89,23 +88,22 @@
 		</section>
 
 		<section id="aboutMe">
-			<div class="container" id="aboutMeContainer">
+			<div class="container my-5" id="aboutMeContainer">
 				<div class="row">
-					<div class="col-8 ml-auto mr-auto mt-5 mb-4">
+					<div class="col-8 mx-auto mt-5 mb-4">
 						<header class="text-center mt-5">
 							<h2>About Me</h2>
-							<h5>Fullstack Developer</h5>
+							<h5>Hi, I'm Brandon. Nice to meet you.</h5>
 
 							<img
 								src="img/Brandon_bw_bg.jpg"
-								class="avatar mt-4"
+								class="mt-4"
+								id="avatar"
 								alt="Brandon"
-								onmouseover="onHover();"
-								onmouseout="offHover();"
 							/>
 						</header>
 					</div>
-					<div class="col-8 ml-auto mr-auto mb-5">
+					<div class="col-8 mx-auto mb-5">
 						<p>
 							I spend my days crafting websites and creating mini
 							javascript projects. I graduated from UM with a
@@ -121,6 +119,25 @@
 							Javascript and Rest APIs, I'm also skilled in
 							photoshop and image manipulation.
 						</p>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-8 mx-auto mb-5">
+								<h4>Programming Proficiency</h4>
+								<div class="skills">
+									<div class="_html">HTML</div>
+								</div>
+								<div class="skills">
+									<div class="_css">CSS</div>
+								</div>
+								<div class="skills">
+									<div class="_bootstrap">Bootstrap</div>
+								</div>
+								<div class="skills">
+									<div class="_javascript">Javascript</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -166,35 +183,35 @@
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img
-										src="./img/testimonials/testimonial1.png"
+										src="./img/testimonials/testimonial1.jpg"
 										class="d-block w-100"
 										alt="testimonial1"
 									/>
 								</div>
 								<div class="carousel-item">
 									<img
-										src="./img/testimonials/testimonial2.png"
+										src="./img/testimonials/testimonial2.jpg"
 										class="d-block w-100"
 										alt="testimonial2"
 									/>
 								</div>
 								<div class="carousel-item">
 									<img
-										src="./img/testimonials/testimonial3.png"
+										src="./img/testimonials/testimonial3.jpg"
 										class="d-block w-100"
 										alt="testimonial3"
 									/>
 								</div>
 								<div class="carousel-item">
 									<img
-										src="./img/testimonials/testimonial4.png"
+										src="./img/testimonials/testimonial4.jpg"
 										class="d-block w-100"
 										alt="testimonial4"
 									/>
 								</div>
 								<div class="carousel-item">
 									<img
-										src="./img/testimonials/testimonial5.png"
+										src="./img/testimonials/testimonial5.jpg"
 										class="d-block w-100"
 										alt="testimonial5"
 									/>
@@ -408,8 +425,8 @@
 			</div>
 		</section>
 
-		<section id="skills" class="pb-3">
-			<div class="container">
+		<section id="skills">
+			<div class="container my-5 pb-5" id="skillsContainer">
 				<div class="row">
 					<div class="mt-5 mb-3 pt-5 col col-12 text-center">
 						<div
@@ -421,7 +438,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="all-rows" class="mb-5">
+				<div id="all-rows">
 					<div
 						id="top-tech-row"
 						class="row mt-5 text-center mr-2 ml-2"
@@ -1078,6 +1095,7 @@
 			</div>
 		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- build:js js/main.js -->
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="node_modules/mixitup/dist/mixitup.min.js"></script>
@@ -1089,15 +1107,6 @@
 
 		<script>
 			AOS.init();
-
-			//change avatar on hover
-			function onHover() {
-				$(".avatar").attr("src", "img/Brandon.jpg");
-			}
-
-			function offHover() {
-				$(".avatar").attr("src", "img/Brandon_bw_bg.jpg");
-			}
 		</script>
 	</body>
 </html>

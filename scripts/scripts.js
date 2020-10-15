@@ -1,4 +1,12 @@
 $(function () {
+	//change avatar on hover
+	$("#avatar").on("mouseover", function () {
+		$("#avatar").attr("src", "img/Brandon.jpg");
+	});
+	$("#avatar").on("mouseout", function () {
+		$("#avatar").attr("src", "img/Brandon_bw_bg.jpg");
+	});
+
 	//set buttons active
 	var projectBtnContainer = document.getElementById("projectBtnContainer");
 	var btns = projectBtnContainer.getElementsByClassName("btn");
@@ -36,19 +44,18 @@ $(function () {
 	$("a").on("click", function (event) {
 		if (this.hash !== "" && this.hash !== "#testimonialCarousel") {
 			event.preventDefault();
-			var hash = this.hash;
+			// var hash = this.hash;
+			var $target = $(this.hash);
+			var targetOffset = $target.offset().top - 75;
 			$("html, body").animate(
 				{
-					scrollTop: $(hash).offset().top,
+					scrollTop: targetOffset,
 				},
 				800,
 				function () {
-					window.location.hash = hash;
+					window.location.hash = $target;
 				}
 			);
 		}
 	});
-
-
-
 });

@@ -60,7 +60,9 @@ h3 {
   text-shadow: 1px 1px 1px black;
   color: white !important;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.4); }
 
 #skills h2 {
   color: white;
@@ -114,12 +116,59 @@ h3 {
   text-align: center;
   justify-content: center; }
 
-.avatar {
+#aboutMeContainer {
+  background-image: url("../img/texture.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  border: rgba(0, 0, 0, 0.5) solid 10px;
+  border-radius: 5%; }
+
+#avatar {
+  border: rgba(0, 0, 0, 0.3) solid 10px;
   border-radius: 50%; }
+
+.skills {
+  width: 100%;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+  border: rgba(0, 0, 0, 0.5) solid 2px;
+  margin-bottom: 25px;
+  background-image: url("../img/texture.png"); }
+
+._html, ._css, ._bootstrap, ._javascript {
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+  border-radius: 20px;
+  border: rgba(0, 0, 0, 0.5) solid 2px;
+  background-image: url("../img/texture.png"); }
+
+._html {
+  width: 75%;
+  background-color: #4caf50; }
+
+._css {
+  width: 75%;
+  background-color: #2196f3; }
+
+._bootstrap {
+  width: 80%;
+  background-color: #f44336; }
+
+._javascript {
+  width: 90%;
+  background-color: #808080; }
 
 #testimonials {
   background-color: #131313;
-  background-image: url("../img/texture.png"); }
+  background-image: url("../img/texture.png");
+  opacity: .9;
+  border-top: 10px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+
+#testimonials img {
+  border: 10px solid rgba(255, 255, 255, 0.2); }
 
 #projects {
   background-color: #14202f;
@@ -128,6 +177,14 @@ h3 {
   background-size: 25%; }
 
 #projects img {
+  border-radius: 5%;
+  border: 10px solid rgba(255, 255, 255, 0.6);
+  background-image: url("../img/texture.png"); }
+
+#skillsContainer {
+  background-image: url("../img/texture.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.2);
   border-radius: 5%; }
 
 #contact {
