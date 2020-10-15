@@ -119,8 +119,7 @@ h3 {
 #aboutMeContainer {
   background-image: url("../img/texture.png");
   background-color: rgba(0, 0, 0, 0.5);
-  border: rgba(0, 0, 0, 0.5) solid 10px;
-  border-radius: 5%; }
+  border: rgba(0, 0, 0, 0.5) solid 10px; }
 
 #avatar {
   border: rgba(0, 0, 0, 0.3) solid 10px;
