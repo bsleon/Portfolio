@@ -184,19 +184,19 @@ h3 {
 	background-image: url("../img/texture.png");
 }
 ._html {
-	width: 75%;
+	width: 90%;
 	background-color: #4caf50;
 }
 ._css {
-	width: 75%;
+	width: 85%;
 	background-color: #2196f3;
 }
 ._bootstrap {
-	width: 80%;
+	width: 90%;
 	background-color: #f44336;
 }
 ._javascript {
-	width: 90%;
+	width: 95%;
 	background-color: #808080;
 }
 
@@ -217,9 +217,11 @@ h3 {
 	background-color: #14202f;
 	background-image: url("../img/computer-chip-pattern.png");
 	background-attachment: fixed;
-	background-size: 25%;
+	opacity: .9;
+	// background-size: 25%;
 	// clip-path: polygon(0% 0%, 100% 170px, 100% 100%, 0% 100%);
 }
+
 
 // .sectionTitle {
 // 	font-size: 3em;
@@ -229,10 +231,15 @@ h3 {
 // }
 
 #projects img {
-	border-radius: 5%;
-	border: 10px solid rgba(255, 255 , 255, .6);
-	background-image: url("../img/texture.png");
+	// border-radius: 5%;
+	border: 10px solid rgba(100, 100, 100, .8);
+	// background-image: url("../img/texture.png");
 
+}
+
+#projectBtnContainer button {
+	background-image: url("../img/texture.png");
+	// background-color: rgba(0, 0, 0, .5);
 }
 
 #skillsContainer {

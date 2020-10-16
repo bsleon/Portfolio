@@ -144,19 +144,19 @@ h3 {
   background-image: url("../img/texture.png"); }
 
 ._html {
-  width: 75%;
+  width: 90%;
   background-color: #4caf50; }
 
 ._css {
-  width: 75%;
+  width: 85%;
   background-color: #2196f3; }
 
 ._bootstrap {
-  width: 80%;
+  width: 90%;
   background-color: #f44336; }
 
 ._javascript {
-  width: 90%;
+  width: 95%;
   background-color: #808080; }
 
 #testimonials {
@@ -173,11 +173,12 @@ h3 {
   background-color: #14202f;
   background-image: url("../img/computer-chip-pattern.png");
   background-attachment: fixed;
-  background-size: 25%; }
+  opacity: .9; }
 
 #projects img {
-  border-radius: 5%;
-  border: 10px solid rgba(255, 255, 255, 0.6);
+  border: 10px solid rgba(100, 100, 100, 0.8); }
+
+#projectBtnContainer button {
   background-image: url("../img/texture.png"); }
 
 #skillsContainer {
