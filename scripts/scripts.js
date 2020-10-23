@@ -41,21 +41,16 @@ $(function () {
 	});
 
 	// Add smooth scrolling to all links
-	$("a").on("click", function (event) {
+	$(document).on("click", 'a[href^="#"]', function (event) {
+		event.preventDefault();
 		if (this.hash !== "" && this.hash !== "#testimonialCarousel") {
-			event.preventDefault();
-			// var hash = this.hash;
-			var $target = $(this.hash);
-			var targetOffset = $target.offset().top - 75;
 			$("html, body").animate(
 				{
-					scrollTop: targetOffset,
+					scrollTop: $($.attr(this, "href")).offset().top + -75,
 				},
-				800,
-				function () {
-					window.location.hash = $target;
-				}
+				800
 			);
 		}
 	});
+
 });
