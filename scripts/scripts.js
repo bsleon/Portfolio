@@ -58,4 +58,78 @@ $(function () {
 		$(".navbar-collapse").collapse("hide");
 	});
 
+	checkAnimation();
+
+	//grow graph bars
+	function startAnimation(direction) {
+		var speed = 2000;
+		var delay = 100;
+		var skillObjArray = [
+			{ skill: "#_html-css", percent: "80%" },
+			{ skill: "#_javascript", percent: "90%" },
+			{ skill: "#_bootstrap", percent: "90%" },
+			{ skill: "#_react", percent: "75%" },
+			{ skill: "#_photoshop", percent: "85%" },
+		];
+		$(".skills").each(function () {
+			skillObjArray.forEach(function(obj){
+				$(this)
+					.find(obj.skill)
+					.delay(delay)
+					.animate({ width: direction + obj.percent }, speed);
+			});
+		});
+	}
+
+	function resetAnimation() {
+		// $(".skills").each(function () {
+		// 	$(this).find("#_html-css").width(0);
+		// 	$(this).find("#_javascript").width(0);
+		// 	$(this).find("#_bootstrap").width(0);
+		// 	$(this).find("#_react").width(0);
+		// 	$(this).find("#_photoshop").width(0);
+		// });
+		startAnimation("-");
+	}
+
+	function isElementInViewport(elem) {
+		var $elem = $(elem);
+		var viewportTop = $(window).scrollTop();
+		var viewportBottom = viewportTop + $(window).height();
+
+		// Get the position of the element on the page.
+		var elemTop = Math.round($elem.offset().top);
+		var elemBottom = elemTop + $elem.height();
+
+		return elemTop < viewportBottom && elemBottom > viewportTop;
+	}
+
+	// Check if it's time to start the animation.
+	function checkAnimation() {
+		var $elem = $(".bar");
+
+		// // If the animation has already been started
+		// if ($elem.hasClass("start")) {
+		// 	return;
+		// }
+
+		// if (!isElementInViewport($elem)) {
+		// 	$elem.removeClass("start");
+		// 	resetAnimation();
+		// }
+
+		if ($elem.hasClass("start")) {
+			return;
+		}
+
+		if (isElementInViewport($elem)) {
+			$elem.addClass("start");
+			startAnimation("");
+		}
+	}
+
+	// Capture scroll events
+	$(window).scroll(function () {
+		checkAnimation();
+	});
 });
