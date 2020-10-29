@@ -72,12 +72,17 @@ $(function () {
 			{ skill: "#_photoshop", percent: "85%" },
 		];
 		$(".skills").each(function () {
-			skillObjArray.forEach(function(obj){
+			for (
+				var i = 0;
+				i < skillObjArray.length;
+				++i
+			) // skillObjArray.forEach((obj) =>{
+			{
 				$(this)
-					.find(obj.skill)
+					.find(skillObjArray[i].skill)
 					.delay(delay)
-					.animate({ width: direction + obj.percent }, speed);
-			});
+					.animate({ width: direction + skillObjArray[i].percent }, speed);
+			}
 		});
 	}
 
