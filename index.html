@@ -38,7 +38,7 @@
 				><img id="logo" src="./favicon.png" alt="logo" />BRANDON LEON</a
 			>
 			<button
-				class="navbar-toggler mr-4"
+				class="navbar-toggler collapsed mr-4 pr-0"
 				type="button"
 				data-toggle="collapse"
 				data-target="#navbarSupportedContent"
@@ -46,7 +46,10 @@
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -127,19 +130,27 @@
 							<div class="col-8 mx-auto mb-5">
 								<!-- <h4 class="text-center">Programming Proficiency</h4> -->
 								<div class="skills mt-4">
-									<div id="_html-css" class="bar">HTML/CSS</div>
+									<div id="_html-css" class="bar">
+										HTML/CSS
+									</div>
 								</div>
 								<div class="skills">
-									<div id="_javascript" class="bar">Javascript/jQuery</div>
+									<div id="_javascript" class="bar">
+										Javascript/jQuery
+									</div>
 								</div>
 								<div class="skills">
-									<div id="_bootstrap" class="bar">Bootstrap</div>
+									<div id="_bootstrap" class="bar">
+										Bootstrap
+									</div>
 								</div>
 								<div class="skills">
 									<div id="_react" class="bar">React</div>
 								</div>
 								<div class="skills">
-									<div id="_photoshop" class="bar">Photoshop</div>
+									<div id="_photoshop" class="bar">
+										Photoshop
+									</div>
 								</div>
 							</div>
 						</div>
@@ -266,156 +277,248 @@
 								class="mt-5 mb-5 pt-5 text-center"
 							>
 								<h2 class="mb-5">Projects</h2>
-								<div class="row btn-group btn-group-md" role="group">
-										<button
-											id="btnAll"
-											type="button"
-											class="btn btn-dark"
-											data-filter="all"
-											data-mixitup-control
-										>
-											Show all
-										</button>
-										<button
-											id="btnbootstrap"
-											type="button"
-											class="btn btn-dark"
-											data-filter=".bootstrap"
-											data-mixitup-control
-										>
-											Bootstrap
-										</button>
-										<button
-											id="btnJS"
-											type="button"
-											class="btn btn-dark"
-											data-filter=".js"
-											data-mixitup-control
-										>
-											Javascript
-										</button>
-										<button
-											id="btnreact"
-											type="button"
-											class="btn btn-dark"
-											data-filter=".react"
-											data-mixitup-control
-										>
-											React
-										</button>
+								<div
+									class="row btn-group btn-group-md"
+									role="group"
+								>
+									<button
+										id="btnAll"
+										type="button"
+										class="btn btn-dark"
+										data-filter="all"
+										data-mixitup-control
+									>
+										Show all
+									</button>
+									<button
+										id="btnbootstrap"
+										type="button"
+										class="btn btn-dark"
+										data-filter=".bootstrap"
+										data-mixitup-control
+									>
+										Bootstrap
+									</button>
+									<button
+										id="btnJS"
+										type="button"
+										class="btn btn-dark"
+										data-filter=".js"
+										data-mixitup-control
+									>
+										Javascript
+									</button>
+									<button
+										id="btnreact"
+										type="button"
+										class="btn btn-dark"
+										data-filter=".react"
+										data-mixitup-control
+									>
+										React
+									</button>
 								</div>
 							</div>
 
 							<!-- Portfolio Gallery Grid -->
-							<div id="gallery" class="row">
-								<div
-									class="column bootstrap mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://github.com/bsleon/NucampBootstrap"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/Nucamp.jpg"
-												alt="Nucamp"
-												style="width: 100%"
-										/></a>
-										<h4>Nucamp</h4>
-										<p>
-											Class project during Nucamp bootcamp
-										</p>
+							<div id="gallery">
+								<div class="row">
+									<div
+										class="column bootstrap mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/Nucamp.jpg"
+													alt="Nucamp"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://github.com/bsleon/NucampBootstrap"
+														target="_blank"
+													>
+														<h4>Nucamp</h4>
+														<p>
+															Class project during
+															Nucamp bootcamp
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="column js mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/FractalTree.jpg"
+													alt="Fractal Tree"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://codepen.io/bsleon/pen/vYLyRvE"
+														target="_blank"
+													>
+														<h4>
+															Fractal Tree
+															Generator
+														</h4>
+														<p>
+															Generate a custom
+															fractal tree.
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="column js mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/MoviePosterCarouselSearcher.jpg"
+													alt="Movie Poster Carousel"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://codepen.io/bsleon/pen/YzwWbvg"
+														target="_blank"
+													>
+														<h4>
+															Movie Poster
+															Carousel
+														</h4>
+														<p>
+															Search movies and
+															display their
+															posters in a
+															carousel.
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div
-									class="column js mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://codepen.io/bsleon/pen/vYLyRvE"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/FractalTree.jpg"
-												alt="Fractal Tree"
-												style="width: 100%"
-										/></a>
-										<h4>Fractal Tree Generator</h4>
-										<p>Generate a custom fractal tree.</p>
+
+								<div class="row">
+									<div
+										class="column js mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/PokemonCards.jpg"
+													alt="Pokemon Cards"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://codepen.io/bsleon/pen/dyGOYRE"
+														target="_blank"
+													>
+														<h4>
+															Pokemon Card
+															Generator
+														</h4>
+														<p>
+															Generate clickable
+															pokemon cards.
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div
-									class="column js mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://codepen.io/bsleon/pen/YzwWbvg"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/MoviePosterCarouselSearcher.jpg"
-												alt="Movie Poster Carousel"
-												style="width: 100%"
-										/></a>
-										<h4>Movie Poster Carousel</h4>
-										<p>
-											Search movies and display their
-											posters in a carousel.
-										</p>
+
+									<div
+										class="column bootstrap js react mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/Chessfen.jpg"
+													alt="Chessfen"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://bsleon.github.io/ReactChessPortfolioProject"
+														target="_blank"
+													>
+														<h4>
+															React Chess Project
+														</h4>
+														<p>
+															Load different chess
+															positions and coach
+															others.
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div
-									class="column js mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://codepen.io/bsleon/pen/dyGOYRE"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/PokemonCards.jpg"
-												alt="Pokemon Cards"
-												style="width: 100%"
-										/></a>
-										<h4>Pokemon Card Generator</h4>
-										<p>Generate clickable pokemon cards.</p>
-									</div>
-								</div>
-								<div
-									class="column bootstrap js react mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://bsleon.github.io/ReactChessPortfolioProject"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/Chessfen.jpg"
-												alt="Chessfen"
-												style="width: 100%"
-										/></a>
-										<h4>React Chess Project</h4>
-										<p>
-											Load different chess positions and
-											coach others.
-										</p>
-									</div>
-								</div>
-								<div
-									class="column js mix col-12 col-md-6 col-lg-4"
-								>
-									<div class="content">
-										<a
-											href="https://codepen.io/bsleon/pen/Bajzeye"
-											target="_blank"
-										>
-											<img
-												src="./img/projects/RecipeGenerator.jpg"
-												alt="Recipe Generator"
-												style="width: 100%"
-										/></a>
-										<h4>Recipe Generator</h4>
-										<p>Generate a random recipe to try.</p>
+
+									<div
+										class="column js mix col-12 col-md-6 col-lg-4 flip-card"
+									>
+										<div class="flip-card-inner">
+											<div
+												class="content flip-card-front"
+											>
+												<img
+													src="./img/projects/RecipeGenerator.jpg"
+													alt="Recipe Generator"
+													style="width: 100%"
+												/>
+											</div>
+											<div class="row flip-card-back">
+												<div class="col mt-5">
+													<a
+														href="https://codepen.io/bsleon/pen/Bajzeye"
+														target="_blank"
+													>
+														<h4>
+															Recipe Generator
+														</h4>
+														<p>
+															Generate a random
+															recipe to try.
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1012,10 +1115,21 @@
 									data-aos="fade-down"
 									data-aos-duration="600"
 								>
-									<h2><i class="fa fa-connectdevelop" aria-hidden="true"></i> Let's Connect!</h2>
+									<h2>
+										<i
+											class="fa fa-connectdevelop"
+											aria-hidden="true"
+										></i>
+										Let's Connect!
+									</h2>
 								</div>
 								<div class="col-12 mt-3">
-									<form id="form" action="mailto:bsleon@umich.edu" method="post" enctype="text/plain">
+									<form
+										id="form"
+										action="mailto:bsleon@umich.edu"
+										method="post"
+										enctype="text/plain"
+									>
 										<div
 											class="form-group"
 											data-aos="fade-right"
@@ -1069,7 +1183,10 @@
 											data-aos-duration="600"
 											id="send"
 										>
-											<button type="submit" class="btn btn-dark">
+											<button
+												type="submit"
+												class="btn btn-dark"
+											>
 												Send
 											</button>
 										</div>
@@ -1088,7 +1205,6 @@
 			<br />
 			<br />
 			<br />
-
 		</section>
 
 		<footer>
