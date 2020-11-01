@@ -9,6 +9,9 @@ body {
   background-attachment: fixed;
   background-color: #535872; }
 
+html, body {
+  overflow-x: hidden; }
+
 .shadow {
   text-shadow: 2px 3px 2px black; }
 
@@ -28,17 +31,21 @@ h3 {
   font-size: 2.5em; }
 
 #logo {
-  width: 50px; }
+  width: 48px; }
 
 .navbar {
   background-color: #231f20 !important;
   background-image: url("../img/texture.png");
   font-family: "Montserrat", sans-serif;
-  /* font-size: 1.5em; */ }
+  /* font-size: 1.5em; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
 
 .navbar-brand {
   font-family: "EB Garamond", serif;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 .nav-item {
   text-align: right; }
@@ -141,7 +148,6 @@ h3 {
   padding-bottom: 3px;
   color: white;
   border-radius: 20px;
-  border: rgba(0, 0, 0, 0.5) solid 2px;
   background-image: url("../img/texture.png"); }
 
 #_html-css {
@@ -161,8 +167,9 @@ h3 {
   background-color: #62DAFC; }
 
 #_photoshop {
-  width: 0;
-  background-color: #084C93; }
+  width: 0%;
+  background-color: #084C93;
+  border: none; }
 
 #testimonials {
   background-color: #131313;
@@ -212,6 +219,8 @@ h3 {
   #con-left {
     display: none; }
   #small-contact {
+    display: none; }
+  #logoName {
     display: none; } }
 
 #small-contact {
@@ -271,12 +280,6 @@ footer ul {
   100% {
     -webkit-transform: translateZ(160px);
     transform: translateZ(160px); } }
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  /* display: none; Hide columns by default */ }
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -341,11 +344,16 @@ footer ul {
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: black;
+  background-color: #1a1919;
+  background-image: url("../img/texture.png");
+  background-size: 90%;
   color: white;
   border: 10px solid rgba(100, 100, 100, 0.8);
   transform: rotateY(180deg);
   backface-visibility: hidden; }
+
+.flip-card-back a {
+  color: white; }
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {

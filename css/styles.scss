@@ -13,6 +13,15 @@ body {
 	background-color: #535872;
 }
 
+html,body
+{
+    // width: 100%;
+    // height: 100%;
+    // margin: 0px;
+    // padding: 0px;
+    overflow-x: hidden; 
+}
+
 .shadow {
 	text-shadow: 2px 3px 2px black;
 }
@@ -36,7 +45,7 @@ h3 {
 }
 
 #logo {
-	width: 50px;
+	width: 48px;
 }
 
 .navbar {
@@ -44,12 +53,16 @@ h3 {
 	background-image: url("../img/texture.png");
 	font-family: "Montserrat", sans-serif;
 	/* font-size: 1.5em; */
+	position:fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
 .navbar-brand {
 	// margin-left: 20px !important;
 	font-family: "EB Garamond", serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .nav-item {
@@ -174,6 +187,12 @@ h3 {
 	background-image: url("../img/texture.png");
 }
 
+// .bar {
+// 	// display:none;
+// 	z-index: -999;
+// 	height: 10%;
+// }
+
 #_html-css, #_javascript, #_bootstrap, #_react, #_photoshop {
 	text-align: center;
 	text-shadow:-1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
@@ -182,7 +201,7 @@ h3 {
 	padding-bottom: 3px;
 	color: white;
 	border-radius: 20px;
-	border: rgba(0, 0, 0, .5) solid 2px;
+	// border: rgba(0, 0, 0, .5) solid 2px;
 	background-image: url("../img/texture.png");
 }
 #_html-css {
@@ -202,8 +221,9 @@ h3 {
 	background-color:#62DAFC;
 }
 #_photoshop {
-	width: 0;
+	width: 0%;
 	background-color: #084C93;
+	border:none;
 }
 
 #testimonials {
@@ -295,6 +315,11 @@ h3 {
 	#small-contact {
 		display: none;
 	}
+
+	#logoName {
+	display: none;
+
+	}
 }
 
 #small-contact {
@@ -376,12 +401,12 @@ footer ul {
 	}
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-	float: left;
-	width: 33.33%;
-	/* display: none; Hide columns by default */
-}
+// /* Create three equal columns that floats next to each other */
+// .column {
+// 	float: left;
+// 	width: 33.33%;
+// 	/* display: none; Hide columns by default */
+// }
 /* The "show" class is added to the filtered elements */
 .show {
 	z-index: -9999;
@@ -469,11 +494,17 @@ height: 100%;
 	position: absolute;
 	top:0;
 	height: 100%;
-  	background-color: black;
+	background-color: rgb(26, 25, 25);
+	background-image: url("../img/texture.png");
+	background-size: 90%;
   	color: white;
 	border: 10px solid rgba(100, 100, 100, .8);
   	transform: rotateY(180deg);
   	backface-visibility: hidden;
+}
+
+.flip-card-back a{
+	color:white;
 }
 
 /* Position the front and back side */

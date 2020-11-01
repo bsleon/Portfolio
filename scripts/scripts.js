@@ -112,7 +112,6 @@ $(function () {
 	// Check if it's time to start the animation.
 	function checkAnimation() {
 		var $elem = $(".bar");
-
 		// // If the animation has already been started
 		// if ($elem.hasClass("start")) {
 		// 	return;
@@ -130,6 +129,7 @@ $(function () {
 		if (isElementInViewport($elem)) {
 			$elem.addClass("start");
 			startAnimation("");
+			$elem.css({ border: "rgba(0, 0, 0, .5) solid 2px" });
 		}
 	}
 
