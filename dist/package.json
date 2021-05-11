@@ -10,7 +10,7 @@
 		"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
 		"watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
 		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-		"imagemin": "imagemin img/* -o dist/img && imagemin img/contact/* -o dist/img/contact && imagemin img/testimonials/* -o dist/img/testimonials && imagemin img/logos/* -o dist/img/logos && imagemin img/projects/* -o dist/img/projects && imagemin certificates/* -o dist/certificates && imagemin ./* -o dist/",
+		"imagemin": "imagemin img/* -o dist/img && imagemin img/contact/* -o dist/img/contact && imagemin img/testimonials/* -o dist/img/testimonials && imagemin img/logos/* -o dist/img/logos && imagemin img/projects/* -o dist/img/projects && imagemin certificates/* -o dist/certificates && imagemin ./* -o dist/ && imagemin img/gifs/* -o dist/img/gifs",
 		"usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
 		"clean": "rimraf dist",
 		"build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
