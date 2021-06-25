@@ -65,10 +65,10 @@ $(function () {
 		var speed = 2000;
 		var delay = 100;
 		var skillObjArray = [
+			{ skill: "#_react", percent: "95%" },
 			{ skill: "#_html-css", percent: "80%" },
 			{ skill: "#_javascript", percent: "90%" },
-			{ skill: "#_bootstrap", percent: "90%" },
-			{ skill: "#_react", percent: "75%" },
+			{ skill: "#_bootstrap", percent: "80%" },
 			{ skill: "#_photoshop", percent: "85%" },
 		];
 		$(".skills").each(function () {
